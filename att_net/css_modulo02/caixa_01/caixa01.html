@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        main{
+            background-color: lightskyblue;
+            color: chartreuse;
+        }
+        article {
+            background-color: white;
+        }
+
+        body{
+            background-color: lightgrey;
+        }
+        h1{ /*box-level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            /*simplificando/resumindo
+            /*sempre na ordem top=cima; right=direita; bottom=baixo; left=esquerda
+
+            border: 10px solid darkslategray;
+
+            padding: 10px;
+
+            margin: 20px 20px 40px 20px;
+
+            outline: 5 px dashed salmon;
+
+            simplificando/resumindo*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 20px ;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px ;
+            
+            /*margin-auto: auto para centralizar*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            
+        }
+        a {  /*inline-level*/
+            border-width: 10px;
+            border-style: solid; 
+            /*
+            dashed = pontilhado
+            solid = normal 
+            dotted = pontilhadinho
+            double = linha dupla
+            groove = 3D
+            */
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*display: block para box-level
+            display: inline para inline-level
+            caso queira alterar um para o outro
+            */
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrados também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+
+    <h1>Grouping Tags</h1>
+
+    <header> 
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsa excepturi adipisci facere obcaecati, modi ratione cum quos dicta. Tempore aliquam vitae esse quaerat? Tempora fuga ex sit est quisquam.</p>
+                <aside>
+                    <p>Artigo escrito por José da silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>

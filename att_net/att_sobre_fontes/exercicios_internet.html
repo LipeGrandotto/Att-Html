@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo da guia</title>
+    <style>
+    mark{
+        background-color: rgb(0, 250, 0);
+    }
+    </style>
+</head>
+<body>
+    <h1>Principas formatações de caracteres:</h1>
+    <h2>Negrito/destaque:</h2>
+    <p>Nesta parte estará em <strong>negrito</strong>.</p>
+    <p>Nesta parte estará em <em>italico</em>.
+    </p>
+     <p>Teste ctrl + shift + p</p> 
+     <p>Marcando textos com tags:</p>
+     <ul>
+        <li>
+            tag 01 = <mark>mark</mark>
+        </li>
+        <li>
+            <small>Texto pequeno</small>
+        </li>
+        <li>
+            <del>Texto deletado</del>
+        </li>
+        <li>
+            <ins>Texto inserido/sublinhado</ins>
+        </li>
+        <li>
+            Texto sobrescrito e subscrito, inserindo coisas como:
+            <ul>
+                <li>
+                    texto sobrescrito como por exemplo: x<sup>20</sup>+3
+                </li>
+                <li>
+                    texto subscrito como por exemplo: H<sub>2</sub>O
+                </li>
+            </ul>
+        </li>
+     </ul>
+
+     <h1>Códigos Fontes:</h1>
+     <p>O comando <code>document.getElementByld('teste')</code> é escrito em linguagem JavaScript</p>
+     <p>
+        <pre>
+            <code>
+    num = int(input('Digite um número'))if nun % 2 == 0
+        print(f'0 número {num}é PAR')
+    else:
+        print(f'0 número{num}é impar')
+    print('Fim de programa')
+            </code>
+        </pre>
+     </p>
+    <h1>Colocar/retirar o espaço:</h1>
+    <p>
+        <ul>
+            <li>
+                Seleciona o texto e clica em "TAB"
+            </li>
+        </ul>
+            Retira o espaço:
+            <ul>
+                <li>
+                    Seleciona o texto e clica em "SHIFT + TAB"
+                </li>
+            </ul>
+    </p>
+    <h1>
+        Citações:
+    </h1>
+    <h3>
+        Citações simples:
+    </h3>
+    <ul>
+        <li>
+            <p>
+            Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.
+            </p>
+        </li>
+    </ul>
+    <h3>
+        Citações completas:
+    </h3>
+    <p> Segundo Jordan Peterson: </p>
+    <blockquote cite="https://www.pensador.com/autor/jordan_b_peterson/">Um homem inofensivo não é um homem bom. Um homem bom é um homem muito perigoso que tem isso sob controle voluntário.</blockquote>
+
+<h1>
+    Abreviações:
+</h1>
+<p> Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Muito bom!</p>
+<h3>Texto invertido</h3>
+<p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+<h1>
+    Trabalhando com listas:
+</h1>
+<h2>Listas ordenadas:</h2>
+<ol type="1" start="3"><!--1 A a I i-->
+    <li>  Acordar </li>
+    <li>Ligar para o João</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+</ol>
+<ol type="I">
+    <li>Acordar </li>
+    <li>Ir para a faculdade</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Ir para a academia</li>
+</ol>
+<h2>Listas não ordenadas:</h2>
+<ul><!--disc circle square-->
+    <li>Pão</li>
+    <li>Manteiga</li>
+    <li>café</li>
+</ul>
+<h2>Juntando listas:</h2>
+<ol>
+    <li>Linguagens Antigas:</li>
+    <ol type="a">
+        <li>Clipper</li>
+        <li>Visual Basic</li>
+        <li>Fortran</li>
+        <li>Delphi</li>
+    </ol>
+    <li>Novas:</li>
+    <ol type="a">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+    </ol>
+</ol>
+<h2>Meus jogos favoritos:</h2>
+<ol>
+    <li>NES</li>
+    <ul>
+        <li>Mario Bros</li>
+        <li>Donkey Kong</li>
+    </ul>
+    <li>Plastation</li>
+    <ul>
+        <li>God of War</li>
+    </ul>
+</ol>
+<h2>Lista de definições:</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interativiade de um site</dd>
+</dl>
+<h1> Usando links externos:</h1>
+<p>Você pode acessar o <a href="https://lipegrandotto.github.io/" target="_blank" rel="externos">  repositório público do Github</a></p>
+<p>Você também pode acessar o meu  <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="externos">canal gratuito do Youtube.</a> </p>
+
+<h1>Usando links internos:</h1>
+<p>Está é a minha página do site. Se você quiser, pode acessar também a minha <a href="exe_internet.html" rel="next" target="_self"> segunda página</a> </p>
+<h1>Links para download:</h1>
+<ul>
+    <li><a href="livro/Dale_carnegie.pdf" download="Dale_carnegie.pdf" type="application/pdf"> Baixar o livro em PDF </a></li>
+    <li><a href="livro/Luiz_Fellipe_João_Victor.rar" download="Luiz_Fellipe_João_Victor" type="application/rar"> Baixar o arquivos compactados em rar.</a></li>
+</ul>
+<h1>Colocando imagens adaptaveis/dinamicas:</h1>
+<p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="foto-g">
+</picture>
+<h1>Reproduzindo áudio:</h1>
+<audio preload="metadata" autoplay controls loop> 
+    <source src="media/arm_wrestler.Amp3" controls autoplay><!--Apagar o 'A' para funcionar-->
+    <source src="media/arm_wrestler.Amp3" type="audio/mpeg"><!--Apagar o 'A' para funcionar-->
+    <source src="media/arm_wrestler.ogg" type="audio/ogg">
+    <source src="media/arm_wrestler.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="media/arm_wrestler.mp3">Clique aqui para baixar p arquivo MP3.</a></p>
+</audio>
+<!--MP3;WAV;OGG-->
+<h1>Inserindo videos hospedados localmente:</h1>
+<p>Este vídeo está hospedado no meu próprio servidor</p>
+<video poster="media/thumb.jpg" src="media/video_leve.mp4" width="500" controls></video><!--É bom colocar vários formatos do mesmo video por conta da compatibilidade dos navegadores ai quando colocar só repetir ao que foi escrito acima no 'audio' '<source src="#" type="#">'-->
+<h1>Inserindo video no Youtube:</h1><!--entrar no video selecionado seja ele do youtube, vimeo entre outros e clicar em compartilhar e 'incorporar' após isso só copiar e colar o codigo HTML aqui-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=h22cMbQhQZ-uhigo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+</body>
+</html>
